@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.container {
+  width: 20rem;
+  height: 20rem;
+  background-color: blue;
+  position: absolute;
+  top: 3rem;
+  margin: 5px 5px;
+  padding: 1rem 1rem;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+.content {
+  background-color: #333;
+  width: 5.5rem;
+  height: 5.5rem;
+  margin-left: 2.5px;
+  color: yellow;
+  font-size: 5rem;
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+.content:hover {
+  cursor: pointer;
+  background-color: rgb(83, 80, 80);
+}
+.boxes {
+  height: 18rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: bisque;
+  padding: 5px 5px;
+}
+
+/* model box design */
+
+.model-box {
+  visibility: hidden;
+  width: 12rem;
+  height: 6.2rem;
+  border: 1px solid #333;
+  background-image: linear-gradient(rgb(33, 164, 188), rgb(223, 62, 199));
+  z-index: 3;
+  text-align: center;
+  margin-top: 10rem;
+  line-height: 2.2rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 4px rgba(168, 242, 246, 0.7);
+  position: relative;
+}
+#winner {
+  margin-top: -1rem;
+  color: #ffff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.model-box button {
+  width: 2.8rem;
+  height: 1.3rem;
+  border: 1px solid rgb(51, 51, 51);
+  background-color: rgb(106, 80, 255);
+  border-radius: 4px;
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  color: #fff;
+  position: absolute;
+  right: 0.4rem;
+  top: 4.4rem;
+}
+.model-box img {
+  width: 40px;
+  height: 30px;
+  margin-top: 0.2rem;
+}
+
+.model-box button:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #333;
+}
+
+.game-name {
+  letter-spacing: 0.3rem;
+  position: absolute;
+  z-index: 5;
+  text-align: center;
+  padding: 6px 2px;
+  top: 0.8rem;
+  font-size: 1.6rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
